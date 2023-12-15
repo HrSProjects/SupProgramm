@@ -1,15 +1,16 @@
 {
   "name": "supportprogramm",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "build": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "build": {
-    "appId": "com.yourapp.id",
-    "productName": "RlxApp",
+    "appId": "xyz.mrhrs.SupPr",
+    "productName": "SupPr",
     "directories": {
       "output": "dist"
     },

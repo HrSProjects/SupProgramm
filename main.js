@@ -26,6 +26,18 @@ function appIsReady() {
           },
         },
         {
+          label: "Previous",
+          accelerator: "CmdOrCtrl+Z",
+          click: () => {
+            const currentWindow = BrowserWindow.getFocusedWindow();
+            if (currentWindow) {
+            } else {
+              console.error("No focused window found.");
+            }
+          },
+        },
+        { type: "separator" },
+        {
           label: "Exit",
           accelerator: "CmdOrCtrl+Q",
           click: () => {
