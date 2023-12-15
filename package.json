@@ -7,6 +7,25 @@
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "build": {
+    "appId": "com.yourapp.id",
+    "productName": "RlxApp",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "src/icons/HrsC.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "src/icons/HrsC.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "src/icons/HrsC.png"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
